@@ -1,0 +1,156 @@
+/* =======================================================
+   GREEN DESK THEME – Frappe / ERPNext
+   Theme Name: modern_ui_theme
+   ======================================================= */
+
+[data-theme="modern_ui_theme"] {
+
+  /* 🌿 Brand Colors */
+  --primary: #16a34a;          /* Green 600 */
+  --primary-dark: #15803d;     /* Green 700 */
+  --primary-light: #4ade80;    /* Green 400 */
+  --secondary: #22c55e;
+
+  /* 🌿 Backgrounds */
+  --bg-color: #f0fdf4;
+  --card-bg: #ffffff;
+  --sidebar-bg: #ecfdf5;
+  --navbar-bg: #dcfce7;
+
+  /* 🌿 Text */
+  --text-color: #064e3b;
+  --text-muted: #6b7280;
+  --heading-color: #022c22;
+
+  /* 🌿 Borders */
+  --border-color: #bbf7d0;
+  --border-radius: 10px;
+
+  /* 🌿 Buttons */
+  --btn-primary-bg: var(--primary);
+  --btn-primary-hover-bg: var(--primary-dark);
+  --btn-primary-text: #ffffff;
+
+  /* 🌿 Links */
+  --link-color: #15803d;
+  --link-hover-color: #166534;
+
+  /* 🌿 Inputs */
+  --input-bg: #ffffff;
+  --input-border: #86efac;
+  --input-focus-border: var(--primary);
+
+  /* 🌿 Shadows */
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 8px 20px rgba(22, 163, 74, 0.15);
+}
+
+/* =======================================================
+   GLOBAL ELEMENT OVERRIDES
+   ======================================================= */
+
+[data-theme="modern_ui_theme"] body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Cards */
+[data-theme="modern_ui_theme"] .frappe-card,
+[data-theme="modern_ui_theme"] .widget,
+[data-theme="modern_ui_theme"] .form-dashboard-section {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Sidebar */
+[data-theme="modern_ui_theme"] .desk-sidebar {
+  background: var(--sidebar-bg);
+}
+
+[data-theme="modern_ui_theme"] .desk-sidebar .item:hover {
+  background-color: rgba(22, 163, 74, 0.1);
+}
+
+[data-theme="modern_ui_theme"] .desk-sidebar .item.active {
+  background-color: rgba(22, 163, 74, 0.18);
+  color: var(--primary);
+}
+
+/* Navbar */
+[data-theme="modern_ui_theme"] .navbar {
+  background: var(--navbar-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Primary Buttons */
+[data-theme="modern_ui_theme"] .btn-primary {
+  background-color: var(--btn-primary-bg);
+  border-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+[data-theme="modern_ui_theme"] .btn-primary:hover {
+  background-color: var(--btn-primary-hover-bg);
+  border-color: var(--btn-primary-hover-bg);
+}
+
+/* Secondary Buttons */
+[data-theme="modern_ui_theme"] .btn-secondary {
+  background-color: #dcfce7;
+  border-color: #86efac;
+  color: var(--primary-dark);
+}
+
+/* Inputs */
+[data-theme="modern_ui_theme"] .form-control {
+  background: var(--input-bg);
+  border-color: var(--input-border);
+  border-radius: 8px;
+}
+
+[data-theme="modern_ui_theme"] .form-control:focus {
+  border-color: var(--input-focus-border);
+  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.25);
+}
+
+/* Links */
+[data-theme="modern_ui_theme"] a {
+  color: var(--link-color);
+}
+
+[data-theme="modern_ui_theme"] a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Table */
+[data-theme="modern_ui_theme"] .datatable {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+[data-theme="modern_ui_theme"] .datatable .dt-header {
+  background: #dcfce7;
+}
+
+/* Scrollbar */
+[data-theme="modern_ui_theme"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[data-theme="modern_ui_theme"] ::-webkit-scrollbar-thumb {
+  background-color: #86efac;
+  border-radius: 4px;
+}
+
+/* Dropdown */
+[data-theme="modern_ui_theme"] .dropdown-menu {
+  border-radius: 10px;
+  box-shadow: var(--shadow-md);
+}
+
+
+[data-theme="modern_ui_theme"] .navbar-home img {
+    max-height: 48px !important;
+    width: auto !important;
+}

@@ -27,10 +27,18 @@ app_license = "mit"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/green_theme/css/green_theme.css"
 # app_include_js = "/assets/green_theme/js/green_theme.js"
+app_include_css = "/assets/green_theme/css/theme.css"
+app_include_js  = "/assets/green_theme/js/theme.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/green_theme/css/green_theme.css"
 # web_include_js = "/assets/green_theme/js/green_theme.js"
+
+
+override_whitelisted_methods = {
+    "frappe.core.doctype.user.user.switch_theme":
+        "green_theme.switch_theme.switch_theme"
+}
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "green_theme/public/scss/website"

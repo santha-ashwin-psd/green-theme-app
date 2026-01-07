@@ -1,0 +1,43 @@
+#custom-modules-root {
+  padding: 24px;
+}
+
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.module-card {
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.module-header {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.module-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.module-card li {
+  margin: 8px 0;
+}
+
+.module-card a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.module-card a:hover {
+  color: var(--primary);
+}

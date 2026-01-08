@@ -1,0 +1,173 @@
+/* ===== Custom Navbar – Frappe Desk Theme ===== */
+
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  background: #eafff3; /* Frappe light green */
+  color: #064e3b;
+  border-bottom: 1px solid #d1fae5;
+  z-index: 1050;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 16px;
+}
+
+/* LEFT */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Brand */
+.brand img {
+  height: 50px;
+}
+
+/* ===== Modules Menu ===== */
+.modules-menu {
+  display: flex;
+  gap: 6px;
+}
+
+.module-dropdown {
+  position: relative;
+}
+
+.module-btn {
+  background: transparent;
+  border: none;
+  color: #065f46;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.module-btn:hover {
+  background: #d1fae5;
+}
+
+/* Dropdown panel */
+.dropdown-menu {
+  position: absolute;
+  top: 115%;
+  left: 0;
+  min-width: 220px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+  padding: 6px 0;
+  display: none;
+  z-index: 2000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px 14px;
+  font-size: 14px;
+  color: #065f46;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background: #ecfdf5;
+}
+
+/* Hover open */
+.module-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* ===== RIGHT (User) ===== */
+.right {
+  display: flex;
+  align-items: center;
+}
+
+/* User dropdown */
+.user-dropdown {
+  position: relative;
+}
+
+.user-btn {
+  background: transparent;
+  border: none;
+  color: #065f46;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.user-btn:hover {
+  background: #d1fae5;
+}
+
+.user-icon {
+  font-size: 16px;
+}
+
+/* User menu */
+.user-menu {
+  position: absolute;
+  right: 0;
+  top: 115%;
+  background: #ffffff;
+  border-radius: 8px;
+  min-width: 170px;
+  box-shadow: 0 12px 24px rgba(0,0,0,.12);
+  display: none;
+  z-index: 2000;
+}
+
+.user-menu a {
+  display: block;
+  padding: 8px 14px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #065f46;
+}
+
+.user-menu a:hover {
+  background: #ecfdf5;
+}
+
+.user-menu .divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 6px 0;
+}
+
+/* Toggle user menu */
+.user-dropdown.open .user-menu {
+  display: block;
+}
+
+/* ===== Hide Core Frappe Navbar ===== */
+body > .sticky-top,
+header.desk-header {
+  display: none !important;
+}
+
+.layout-main-section-wrapper {
+  padding-top: 52px !important;
+}
+
+.layout-side-section {
+  top: 52px !important;
+}

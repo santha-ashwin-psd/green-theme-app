@@ -68,7 +68,7 @@ function get_custom_navbar_html() {
 }
 
 function is_admin_user() {
-    return frappe.user.has_role("Admin");
+    return frappe.user.has_role("admin");
 }
 function is_administrator() {
     return (
